@@ -1,0 +1,16 @@
+{{page-title "Color Picker"}}
+
+
+{{!-- <input type='hidden' value='' id='colorPickerContainer' onchange={{action this.colorPicked}}/> --}}
+
+
+
+<div id='colorPickerContainer' onclick={{action this.showColorPicker}}>
+    <input type='checkbox' value='' id='colorPickerInput' onchange={{action this.colorPicked}}/>
+    <i></i>
+</div>
+
+<br>
+<br>
+<br>
+<div id="colorReflector" style={{this.colorValue}}></div>

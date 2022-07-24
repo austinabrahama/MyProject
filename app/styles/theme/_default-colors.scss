@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////////////////////////
+/// Store all default colors in core Sass lists
+/// Description : This is mainly for cross checking variables inside CSS-var function and to conditionally fallback to non-CSS version of color theme
+/////////////////////////////////////////////////////////////////////////
+
+$app-default-colors: ( //Base
+    base-bg: #ffffff,
+    invert-bg-clr: #212121,
+
+    base-text-clr: #212121,
+    invert-text-clr: #ffffff,
+
+    base-border-clr: #212121,
+
+    highlighter-clr: yellow,
+);

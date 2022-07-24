@@ -1,0 +1,37 @@
+/* CSS variables fallback colors */
+$fallbackColors : (
+    clr:#000, bg:#f1f1f1, base:#fff, border:#dadada,shadow:rgba(85, 85, 85, 0.1)
+);
+
+/////////////////////////////////////////
+/// Fallback to non CSS-var color theme
+/////////////////////////////////////////
+
+@import "default-colors";
+
+$enable-non-css-var-clr-theme : true;
+//Additional wrapper function for assigning CSS variables to Sass variables
+//On condition fallbacks to non CSS variable version of color theme
+@function CSS-var($clr, $type:clr) {
+    @if $enable-non-css-var-clr-theme {
+      //returns hardcoded color value
+      @return map-get($app-default-colors, $clr);
+    } @else {
+      //returns CSS variable which contains hardcoded color value
+      @return var(--app-#{$clr},#{map-get($fallbackColors, $type)});
+    }
+}
+
+//text color
+$base-text-color: CSS-var(base-text-clr);
+$invert-text-color: CSS-var(invert-text-clr);
+
+//border
+$base-border-color: CSS-var(base-border-clr, border);
+
+//BG
+$base-bg: CSS-var(base-bg, bg);
+$invert-bg-clr: CSS-var(invert-bg-clr, bg);
+
+//Common
+$highlighter-color: CSS-var(highlighter-clr);

@@ -1,0 +1,22 @@
+/////////////////////
+///Default color set
+/////////////////////
+
+/// Categorization of colors
+
+///Main categories
+/// 1. Base & common (Very basic colors such as body background and text colors, container headers),
+
+
+:root {//Base
+    --app-base-bg: #ffffff;
+    --app-invert-bg-clr: #212121;
+
+    --app-base-text-clr: #212121;
+    --app-invert-text-clr: #ffffff;
+
+    --app-base-border-clr: #212121;
+
+    --app-highlighter-clr: yellow,
+
+}
