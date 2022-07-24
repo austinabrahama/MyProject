@@ -1,0 +1,28 @@
+.drumKitContainer {
+    background: url("/assets/images/drum-kit-background.jpg") 0 0/cover no-repeat;
+    height: 100vh;
+    .drumKitKeyHolder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        div {
+            padding: 35px;
+            border: 4px solid $base-border-color;
+            cursor: pointer;
+            margin: 10px;
+            background-color: rgba($invert-bg-clr, 0.5);
+            text-align: center;
+            kbd {
+                display: block;
+                color: $invert-text-color;
+                font-size: $font_size_secondary;
+                @extend .bold;
+            }
+
+            .sound{
+                color: $highlighter-color;
+            }
+        }
+    }
+}
