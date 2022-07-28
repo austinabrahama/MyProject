@@ -1,24 +1,42 @@
-.flex-container{
+.flexBoxContainer {
     display: flex;
     flex-direction: row;
-    border: 10px solid aqua;
 
-    .flex-items {
-        color:white;
-        font-size: 100px;
-        text-align: center;
-        text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
-        padding: 10px;
+    .flexBoxSelection {
+        padding: 20px;
+        border-right: 2px solid #2C3F53;
+        div {
+            margin: 10px 0px;
+        }
     }
 
-    .box1 { background-color: #18B292; }
-    .box2 { background-color: #2D8BD6; }
-    .box3 { background-color: #924FAD; }
-    .box4 { background-color: #2C3F53; }
-    .box5 { background-color: #EFBD14; }
-    .box6 { background-color: #E37320; }
-    .box7 { background-color: #E54138; }
-    .box8 { background-color: #B3BAC1; }
-    .box9 { background-color: #2AC567; }
-    .box10 { background-color: #16957B; }
+    .flexBoxMock {
+        margin: 20px;
+        flex: 1;
+        clear: both;
+        .flex-mock-container{
+            display: flex;
+            flex-direction: row;
+            border: 10px solid aqua;
+
+            .flex-items {
+                color:white;
+                font-size: 100px;
+                text-align: center;
+                text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+                padding: 10px;
+            }
+
+            .box1 { background-color: #18B292; }
+            .box2 { background-color: #2D8BD6; }
+            .box3 { background-color: #924FAD; }
+            .box4 { background-color: #2C3F53; }
+            .box5 { background-color: #EFBD14; }
+            .box6 { background-color: #E37320; }
+            .box7 { background-color: #E54138; }
+            .box8 { background-color: #B3BAC1; }
+            .box9 { background-color: #2AC567; }
+            .box10 { background-color: #16957B; }
+        }
+    }
 }
